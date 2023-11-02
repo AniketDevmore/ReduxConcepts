@@ -4,16 +4,18 @@ import counterSlice from "../slices/counterSlice";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { combineReducers } from "@reduxjs/toolkit";
+import cartReducer from "../slices/cartReducer";
 
 const peristConfig = {
   key: "root",
   storage,
   version: 1,
-  whitelist: ["data"],
 };
 
 const reducer = combineReducers({
-  counterSlice: counterSlice,
+  // counterSlice: counterSlice,
+  persistedStore: counterSlice,
+  notPersistedStore: cartReducer,
 });
 
 const persistedReducer = persistReducer(peristConfig, reducer);

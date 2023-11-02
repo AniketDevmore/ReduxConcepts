@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 function App() {
   const [state, setState] = useState(0);
   const dispatch = useDispatch();
-  const globalState = useSelector((state) => state.counterSlice);
+  const globalState = useSelector((state) => state.persistedStore);
 
   const incrementHandler = () => {
     dispatch(IncrementMe());

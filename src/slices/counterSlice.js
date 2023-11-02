@@ -6,8 +6,6 @@ export const counterSlice = createSlice({
     value: 0,
     name: "john",
     input: 0,
-    data: [],
-    cart: [],
   },
   reducers: {
     changeInput: (state, action) => {
