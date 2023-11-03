@@ -9,7 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ag-grid-community/client-side-row-model": "^30.2.1",
+    "@ag-grid-enterprise/column-tool-panel": "^30.2.1",
+    "@ag-grid-enterprise/excel-export": "^30.2.1",
+    "@ag-grid-enterprise/master-detail": "^30.2.1",
+    "@ag-grid-enterprise/menu": "^30.2.1",
     "@reduxjs/toolkit": "^1.9.3",
+    "ag-grid-community": "^30.2.1",
+    "ag-grid-react": "^30.2.1",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

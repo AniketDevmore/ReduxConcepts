@@ -9,13 +9,15 @@ import { persistStore } from "redux-persist";
 import CsvFileToTable from "./components/csvFileTOTable/CsvFileToTable";
 import CsvFileAnother from "./components/csvFileTOTable/CsvFileAnother";
 import ExcelToJson from "./components/excelToJson/ExcelToJson";
+import AgGrid from "./components/agGrid/AgGrid";
 
 let persistor = persistStore(store);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <App />
+      {/* <App /> */}
+      <AgGrid />
       {/* <CsvFileToTable /> */}
       {/* <CsvFileAnother /> */}
       {/* <ExcelToJson /> */}
